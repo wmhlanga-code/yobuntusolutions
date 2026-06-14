@@ -1,18 +1,58 @@
-export const aiServices = [
-  { title: 'AI Readiness Assessments', desc: 'Understand your starting point and what AI can realistically do for your organisation.', color: 'green' },
-  { title: 'Staff Training & Workshops', desc: 'Hands-on sessions for teams — no jargon, practical tools, real results.', color: 'purple' },
-  { title: 'Ethical AI Guidance', desc: 'Privacy, misinformation, and data use policies tailored to your local context.', color: 'amber' },
-  { title: 'Workflow Automation', desc: 'Cut repetitive admin and free your team for work that actually matters.', color: 'blue' },
-  { title: 'AI Customer Service', desc: 'AI-assisted WhatsApp replies, social media, and customer communication.', color: 'coral' },
-  { title: 'Ongoing Support', desc: 'Continuous consulting as your organisation and technology evolve together.', color: 'teal' },
-];
-
-export const directoryServices = [
-  { title: 'Local Tradespeople', desc: 'Find verified plumbers, electricians, mechanics, and more in Nkomazi.', color: 'purple' },
-  { title: 'Health Directory', desc: 'Clinics, doctors, and hospitals — with real opening hours and contact info.', color: 'blue' },
-];
-
-export const agencyServices = [
-  { title: 'Website Design & Build', desc: 'Professional, mobile-first websites built for low-data rural users.', color: 'green' },
-  { title: 'Social Media & Marketing', desc: 'Content creation and AI-assisted posting for local audiences.', color: 'amber' },
+export const coreServices = [
+  {
+    id: 1,
+    icon: 'Brain',
+    color: 'green',
+    title: 'AI & Automation Consulting',
+    description: 'We assess your operations and implement AI and automation tools that eliminate inefficiencies, reduce costs, and help your team focus on high-value work.',
+    tags: ['Process automation', 'AI tools', 'Workflow design'],
+  },
+  {
+    id: 2,
+    icon: 'Settings',
+    color: 'purple',
+    title: 'Business Process Optimization',
+    description: 'We map, analyse, and redesign your core business processes to eliminate bottlenecks, reduce waste, and improve output quality at every level.',
+    tags: ['Process mapping', 'Efficiency', 'Cost reduction'],
+  },
+  {
+    id: 3,
+    icon: 'Monitor',
+    color: 'blue',
+    title: 'Digital Transformation Support',
+    description: 'End-to-end support for organisations moving into the digital era — from strategy and tool selection to implementation, change management, and staff adoption.',
+    tags: ['Strategy', 'Implementation', 'Change management'],
+  },
+  {
+    id: 4,
+    icon: 'BarChart2',
+    color: 'amber',
+    title: 'Data Analytics & Business Intelligence',
+    description: 'Turn your raw data into clear, actionable insight. We build dashboards, reports, and BI systems that help leadership make faster, better-informed decisions.',
+    tags: ['Dashboards', 'Reporting', 'Decision support'],
+  },
+  {
+    id: 5,
+    icon: 'ShieldCheck',
+    color: 'teal',
+    title: 'AI Training & Ethical Implementation',
+    description: 'We train your staff to use AI tools confidently and responsibly — covering privacy, bias, misinformation, and governance so adoption is safe and sustainable.',
+    tags: ['Staff training', 'AI ethics', 'Governance'],
+  },
+  {
+    id: 6,
+    icon: 'Network',
+    color: 'coral',
+    title: 'Strategic Business Networking',
+    description: 'Access our growing network of businesses, NGOs, funders, and partners. We make introductions, facilitate collaborations, and connect you to the right opportunities.',
+    tags: ['Partnerships', 'Introductions', 'Collaboration'],
+  },
+  {
+    id: 7,
+    icon: 'TrendingUp',
+    color: 'purple',
+    title: 'Growth & Innovation Consulting',
+    description: 'Strategic advisory that helps organisations identify new revenue streams, enter new markets, and build innovation capability from within.',
+    tags: ['Revenue growth', 'Market strategy', 'Innovation'],
+  },
 ];

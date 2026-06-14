@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MapPin, Mail, Clock, MessageCircle, CheckCircle } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -30,10 +31,18 @@ export default function Contact() {
 
   return (
     <div>
+      <SEO
+        title="Contact Us — Book a Free Consultation"
+        description="Book a free 30-minute consultation with YoBuntu Solutions. We work with organisations across South Africa on AI consulting, business process optimization, digital transformation, and growth strategy."
+        path="/contact"
+      />
       <section style={{ background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border)' }}>
         <div className="section-wrap" style={{ paddingBottom: '2rem' }}>
-          <p className="eyebrow">Let's talk</p>
-          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.4rem)' }}>Get in touch</h1>
+          <p className="eyebrow">Get in touch</p>
+          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.4rem)' }}>Let's start a conversation</h1>
+          <p style={{ color: 'var(--text-muted)', maxWidth: 560, marginTop: '0.75rem', lineHeight: 1.7 }}>
+            Whether you're exploring AI for the first time or ready to transform your operations — we'd love to hear about your organisation.
+          </p>
         </div>
       </section>
 
@@ -86,10 +95,13 @@ export default function Contact() {
                     onFocus={e => e.target.style.borderColor = 'var(--primary)'}
                     onBlur={e => e.target.style.borderColor = 'var(--border)'}>
                     <option value="">Select a service…</option>
-                    <option value="ai">AI Consulting</option>
-                    <option value="directory">Directory Listing</option>
-                    <option value="agency">Website & Marketing</option>
-                    <option value="b2b">B2B Connections</option>
+                    <option value="ai-automation">AI & Automation Consulting</option>
+                    <option value="process-optimization">Business Process Optimization</option>
+                    <option value="digital-transformation">Digital Transformation</option>
+                    <option value="data-analytics">Data Analytics & BI</option>
+                    <option value="ai-training">AI Training & Ethics</option>
+                    <option value="networking">Strategic Networking</option>
+                    <option value="growth-innovation">Growth & Innovation Consulting</option>
                     <option value="general">General enquiry</option>
                   </select>
                 </div>

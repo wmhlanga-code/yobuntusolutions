@@ -13,9 +13,9 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { to: '/ai-consulting', label: 'AI Consulting' },
-    { to: '/directory', label: 'Local Directory' },
-    { to: '/agency', label: 'Digital Agency' },
+    { to: '/services', label: 'Services' },
+    { to: '/network', label: 'Our Network' },
+    { to: '/about', label: 'About' },
     { to: '/pricing', label: 'Pricing' },
     { to: '/contact', label: 'Contact' },
   ];
@@ -131,7 +131,7 @@ export default function Navbar() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <Link to="/contact" className="btn-primary desktop-nav" style={{ fontSize: '0.88rem', padding: '0.55rem 1.1rem' }}>
-            Get started
+            Book a consultation →
           </Link>
           <button
             onClick={() => setOpen(o => !o)}
@@ -160,7 +160,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <Link to="/contact" className="btn-primary" style={{ marginTop: '0.5rem', justifyContent: 'center' }} onClick={() => setOpen(false)}>
-            Get started
+            Book a consultation →
           </Link>
         </div>
       )}

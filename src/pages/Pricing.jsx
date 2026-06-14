@@ -1,81 +1,78 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, ChevronDown } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const tiers = [
   {
-    badge: 'Starter',
+    badge: 'Starter Consultation',
     badgeBg: '#F3F4F6', badgeColor: '#374151',
     price: 'Free',
-    sub: 'Always free for basic listings',
+    sub: 'Understand what\'s possible',
     features: [
-      'Basic directory profile',
-      'WhatsApp community access',
-      'Verified local badge',
-      'Monthly AI meetup invites',
+      '30-min strategy call',
+      'Organisation needs assessment',
+      'AI readiness overview',
+      'Resource recommendations',
     ],
-    cta: 'Get started free',
+    cta: 'Book a free call',
     ctaLink: '/contact',
     highlight: false,
-    borderColor: 'var(--border)',
   },
   {
-    badge: 'Growth',
+    badge: 'Project Engagement',
     badgeBg: 'var(--primary-lt)', badgeColor: 'var(--deep)',
-    price: 'R50–90',
-    sub: 'per month',
+    price: 'Custom quote',
+    sub: 'Scoped, delivered, measurable',
     features: [
-      'Featured directory placement',
-      'AI social media post tool',
-      'Market rate insights',
-      'Photo gallery (up to 10 images)',
+      'Full discovery process',
+      'Tailored solution design',
+      'Implementation & training',
+      '30-day post-delivery support',
     ],
-    cta: 'Start growing',
+    cta: 'Get a quote',
     ctaLink: '/contact',
     highlight: true,
-    borderColor: 'var(--primary)',
     popular: true,
   },
   {
-    badge: 'Digital Agency',
+    badge: 'Retainer Partnership',
     badgeBg: 'var(--purple-lt)', badgeColor: 'var(--purple)',
-    price: 'From R800',
-    sub: 'once-off or monthly retainer',
+    price: 'Monthly retainer',
+    sub: 'Ongoing expert support',
     features: [
-      'Professional website',
-      'Social media setup',
-      'Logo & branding',
-      'B2B connection service',
+      'Dedicated consulting hours',
+      'Continuous optimization',
+      'Network introductions',
+      'Quarterly strategy reviews',
     ],
-    cta: 'Request a quote',
+    cta: 'Discuss a retainer',
     ctaLink: '/contact',
     highlight: false,
-    borderColor: 'var(--border)',
   },
   {
-    badge: 'AI Consulting',
+    badge: 'Enterprise & NGO',
     badgeBg: 'var(--amber-lt)', badgeColor: 'var(--amber)',
-    price: 'Custom',
-    sub: 'scoped to your organisation',
+    price: 'Get in touch',
+    sub: 'Large-scale transformation',
     features: [
-      'Readiness assessment',
-      'Staff workshops',
-      'Workflow automation',
-      'Ongoing support',
+      'Multi-department engagements',
+      'Custom AI solutions',
+      'Staff training programmes',
+      'Impact reporting',
     ],
-    cta: 'Book a consultation',
+    cta: 'Start a conversation',
     ctaLink: '/contact',
     highlight: false,
-    borderColor: 'var(--border)',
   },
 ];
 
 const faqs = [
-  { q: 'Do I need technical knowledge to get started?', a: 'No. We guide you from zero, at your own pace.' },
-  { q: 'How long does a website take to build?', a: 'Typically 1–2 weeks for a standard small business site.' },
-  { q: 'Can I upgrade my plan later?', a: 'Yes, you can move between plans anytime with no penalty.' },
-  { q: 'Are health and trade directory listings really free?', a: 'Yes. Basic listings for all public health facilities and local tradespeople are always free.' },
-  { q: 'What areas do you currently serve?', a: 'We are based in Nkomazi and currently serve Mpumalanga. We offer remote consulting nationally.' },
+  { q: 'Do I need technical knowledge?', a: 'No. We explain everything in plain language and handle the technical side.' },
+  { q: 'How long does a project take?', a: 'From 2 weeks for a focused automation project to several months for full digital transformation.' },
+  { q: 'Do you work with NGOs?', a: 'Yes. We regularly work with NGOs and can structure engagements to fit grant-funded budgets.' },
+  { q: 'What industries do you work in?', a: 'All industries. Our methodology adapts to any sector.' },
+  { q: 'Where are you based?', a: 'Nkomazi, Mpumalanga. We serve clients locally and remotely across South Africa.' },
 ];
 
 export default function Pricing() {
@@ -83,12 +80,17 @@ export default function Pricing() {
 
   return (
     <div>
+      <SEO
+        title="Pricing — Free Consultation to Enterprise Engagements"
+        description="Transparent pricing from YoBuntu Solutions. Start with a free 30-minute strategy consultation and scale to project engagements, monthly retainers, or large-scale enterprise transformation."
+        path="/pricing"
+      />
       {/* Hero */}
       <section style={{ background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border)' }}>
         <div className="section-wrap" style={{ textAlign: 'center' }}>
           <p className="eyebrow" style={{ textAlign: 'center' }}>Transparent pricing</p>
           <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.4rem)', marginBottom: '0.75rem' }}>Simple plans for every stage</h1>
-          <p style={{ color: 'var(--text-muted)', maxWidth: 480, margin: '0 auto' }}>Start free, grow when you're ready. No hidden fees, no contracts.</p>
+          <p style={{ color: 'var(--text-muted)', maxWidth: 480, margin: '0 auto' }}>Start with a free consultation, then scale to a project or retainer when you're ready.</p>
         </div>
       </section>
 
@@ -126,7 +128,7 @@ export default function Pricing() {
                 }}>{t.badge}</span>
 
                 <div>
-                  <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.8rem', fontWeight: 700, lineHeight: 1 }}>{t.price}</p>
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.6rem', fontWeight: 700, lineHeight: 1 }}>{t.price}</p>
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.82rem', marginTop: '0.25rem' }}>{t.sub}</p>
                 </div>
 
