@@ -18,8 +18,8 @@ const STRUCTURED_DATA = {
   url: 'https://www.yobuntusolutions.co.za',
   logo: 'https://www.yobuntusolutions.co.za/logo192.png',
   image: 'https://www.yobuntusolutions.co.za/og-image.png',
-  telephone: '+27XXXXXXXXX',
-  email: 'hello@yobuntu.co.za',
+  telephone: '+27762505608',
+  email: 'Yobuntusolutions@gmail.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Nkomazi',

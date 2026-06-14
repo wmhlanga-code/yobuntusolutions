@@ -138,7 +138,7 @@ export default function Contact() {
                 <Mail size={18} color="var(--primary)" style={{ flexShrink: 0, marginTop: 2 }} aria-hidden="true" />
                 <div>
                   <p style={{ fontWeight: 500 }}>Email</p>
-                  <a href="mailto:hello@yobuntu.co.za" style={{ color: 'var(--primary)', fontSize: '0.9rem' }}>hello@yobuntu.co.za</a>
+                  <a href="mailto:Yobuntusolutions@gmail.com" style={{ color: 'var(--primary)', fontSize: '0.9rem' }}>Yobuntusolutions@gmail.com</a>
                 </div>
               </div>
 
@@ -152,7 +152,7 @@ export default function Contact() {
             </div>
 
             <a
-              href="https://wa.me/27XXXXXXXXX"
+              href="https://wa.me/27762505608"
               style={{
                 display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center',
                 background: '#25D366', color: '#fff',
