@@ -16,22 +16,22 @@ export default function Footer() {
             </div>
             <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '1rem' }}>YoBuntu Solutions</span>
           </div>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>Business growth and innovation consulting powered by AI.</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>A business growth &amp; network company. We connect businesses to the people, technology, and opportunities they need to grow.</p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
             <MapPin size={14} aria-hidden="true" /> Nkomazi, Mpumalanga, South Africa
           </p>
         </div>
 
         <div style={col}>
-          <p style={heading}>Services</p>
+          <p style={heading}>What we do</p>
           {[
-            { to: '/services', label: 'AI & Automation Consulting' },
-            { to: '/services', label: 'Business Process Optimization' },
-            { to: '/services', label: 'Digital Transformation' },
-            { to: '/services', label: 'Data Analytics & BI' },
-            { to: '/services', label: 'AI Training & Ethics' },
-            { to: '/network', label: 'Strategic Networking' },
-            { to: '/services', label: 'Growth & Innovation' },
+            { to: '/services', label: 'Long-Term Growth Partnership' },
+            { to: '/network', label: 'Business Introductions' },
+            { to: '/services', label: 'Access to Opportunities' },
+            { to: '/services', label: 'Strategic Partnerships' },
+            { to: '/services', label: 'AI-Powered Efficiency' },
+            { to: '/services', label: 'Results Measurement' },
+            { to: '/pilot', label: 'The Divine Project Pilot' },
           ].map((l, i) => (
             <Link key={i} to={l.to} style={linkStyle} onMouseEnter={e => e.target.style.color = 'var(--primary)'} onMouseLeave={e => e.target.style.color = 'var(--text-muted)'}>{l.label}</Link>
           ))}
@@ -41,10 +41,10 @@ export default function Footer() {
           <p style={heading}>Company</p>
           {[
             { to: '/about', label: 'About' },
-            { to: '/network', label: 'Our Network' },
-            { to: '/pricing', label: 'Pricing' },
+            { to: '/network', label: 'The Network' },
+            { to: '/pilot', label: 'Pilot' },
+            { to: '/pricing', label: 'Partnership' },
             { to: '/contact', label: 'Contact' },
-            { to: '/', label: 'Privacy Policy' },
           ].map((l, i) => (
             <Link key={i} to={l.to} style={linkStyle} onMouseEnter={e => e.target.style.color = 'var(--primary)'} onMouseLeave={e => e.target.style.color = 'var(--text-muted)'}>{l.label}</Link>
           ))}
@@ -52,7 +52,7 @@ export default function Footer() {
       </div>
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '1rem 1.5rem', borderTop: '1px solid var(--border)', color: 'var(--text-muted)', fontSize: '0.83rem' }}>
-        © 2025 YoBuntu Solutions · Nkomazi, Mpumalanga · Business growth powered by AI
+        © 2025 YoBuntu Solutions · Nkomazi, Mpumalanga · A business growth &amp; network company
       </div>
 
       <style>{`

@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Network from './pages/Network';
+import Pilot from './pages/Pilot';
 import About from './pages/About';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
@@ -14,7 +15,7 @@ const STRUCTURED_DATA = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'YoBuntu Solutions',
-  description: 'Business growth and innovation consultancy helping organisations improve operations, increase revenue, and adopt AI responsibly.',
+  description: 'A business growth and network company helping businesses grow by connecting them to the customers, partners, investors, technology, and opportunities they need to succeed.',
   url: 'https://www.yobuntusolutions.co.za',
   logo: 'https://www.yobuntusolutions.co.za/logo192.png',
   image: 'https://www.yobuntusolutions.co.za/og-image.png',
@@ -41,15 +42,14 @@ const STRUCTURED_DATA = {
   sameAs: [],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Consulting Services',
+    name: 'Business Growth & Network Services',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI & Automation Consulting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Business Process Optimization' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Digital Transformation Support' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Data Analytics & Business Intelligence' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Training & Ethical Implementation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Strategic Business Networking' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Growth & Innovation Consulting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Long-Term Growth Partnership' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Business Introductions & Connections' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Access to Opportunities (Investors, Government, NGOs)' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Strategic Partnerships & Collaboration' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI-Powered Efficiency' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Results Measurement & Reporting' } },
     ],
   },
 };
@@ -77,6 +77,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
               <Route path="/network" element={<Network />} />
+              <Route path="/pilot" element={<Pilot />} />
               <Route path="/about" element={<About />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/contact" element={<Contact />} />

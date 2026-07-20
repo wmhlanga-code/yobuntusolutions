@@ -5,60 +5,60 @@ import SEO from '../components/SEO';
 
 const tiers = [
   {
-    badge: 'Starter Consultation',
+    badge: 'Discovery Call',
     badgeBg: '#F3F4F6', badgeColor: '#374151',
     price: 'Free',
-    sub: 'Understand what\'s possible',
+    sub: 'See what we could build around you',
     features: [
-      '30-min strategy call',
-      'Organisation needs assessment',
-      'AI readiness overview',
-      'Resource recommendations',
+      '30-min growth conversation',
+      'Business needs assessment',
+      'Early network opportunities',
+      'Honest view of the fit',
     ],
     cta: 'Book a free call',
     ctaLink: '/contact',
     highlight: false,
   },
   {
-    badge: 'Project Engagement',
+    badge: 'Growth Partnership',
     badgeBg: 'var(--primary-lt)', badgeColor: 'var(--deep)',
-    price: 'Custom quote',
-    sub: 'Scoped, delivered, measurable',
+    price: 'Custom',
+    sub: 'Our core, ongoing partnership',
     features: [
-      'Full discovery process',
-      'Tailored solution design',
-      'Implementation & training',
-      '30-day post-delivery support',
+      'A network built around your business',
+      'Active introductions & opportunities',
+      'AI tools that cut cost and save time',
+      'Results measured and reported',
     ],
-    cta: 'Get a quote',
+    cta: 'Become a partner',
     ctaLink: '/contact',
     highlight: true,
     popular: true,
   },
   {
-    badge: 'Retainer Partnership',
-    badgeBg: 'var(--purple-lt)', badgeColor: 'var(--purple)',
-    price: 'Monthly retainer',
-    sub: 'Ongoing expert support',
+    badge: 'Network Membership',
+    badgeBg: 'var(--blue-lt)', badgeColor: 'var(--blue)',
+    price: 'Monthly',
+    sub: 'Access to the network',
     features: [
-      'Dedicated consulting hours',
-      'Continuous optimization',
-      'Network introductions',
-      'Quarterly strategy reviews',
+      'Membership in the YoBuntu network',
+      'Warm introductions on request',
+      'Shared opportunities & contracts',
+      'Quarterly growth reviews',
     ],
-    cta: 'Discuss a retainer',
-    ctaLink: '/contact',
+    cta: 'Join the network',
+    ctaLink: '/network',
     highlight: false,
   },
   {
     badge: 'Enterprise & NGO',
     badgeBg: 'var(--amber-lt)', badgeColor: 'var(--amber)',
     price: 'Get in touch',
-    sub: 'Large-scale transformation',
+    sub: 'Larger or mission-driven',
     features: [
-      'Multi-department engagements',
-      'Custom AI solutions',
-      'Staff training programmes',
+      'Multi-team engagements',
+      'Custom AI & operations support',
+      'Ecosystem & partnership building',
       'Impact reporting',
     ],
     cta: 'Start a conversation',
@@ -68,11 +68,11 @@ const tiers = [
 ];
 
 const faqs = [
-  { q: 'Do I need technical knowledge?', a: 'No. We explain everything in plain language and handle the technical side.' },
-  { q: 'How long does a project take?', a: 'From 2 weeks for a focused automation project to several months for full digital transformation.' },
-  { q: 'Do you work with NGOs?', a: 'Yes. We regularly work with NGOs and can structure engagements to fit grant-funded budgets.' },
-  { q: 'What industries do you work in?', a: 'All industries. Our methodology adapts to any sector.' },
-  { q: 'Where are you based?', a: 'Nkomazi, Mpumalanga. We serve clients locally and remotely across South Africa.' },
+  { q: 'Are you consultants?', a: 'No. Consultants give advice and leave. We become a long-term growth partner — actively building connections and opportunities around your business over years.' },
+  { q: 'What exactly do I get?', a: 'A network built around your business — introductions to customers, suppliers, partners, funders, and opportunities — plus AI tools that make you more efficient, with every result measured.' },
+  { q: 'How is AI involved?', a: 'AI is one of our tools, not the product. We use automation, analysis, customer support, and forecasting to reduce cost and effort — always in service of your growth.' },
+  { q: 'Do you work with NGOs and small businesses?', a: 'Yes. We work with small and growing businesses, NGOs, and NPOs, and can structure partnerships to fit different budgets.' },
+  { q: 'Where are you based?', a: 'Nkomazi, Mpumalanga. We partner with businesses locally and remotely across South Africa — and are building toward other countries.' },
 ];
 
 export default function Pricing() {
@@ -88,9 +88,9 @@ export default function Pricing() {
       {/* Hero */}
       <section style={{ background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border)' }}>
         <div className="section-wrap" style={{ textAlign: 'center' }}>
-          <p className="eyebrow" style={{ textAlign: 'center' }}>Transparent pricing</p>
-          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.4rem)', marginBottom: '0.75rem' }}>Simple plans for every stage</h1>
-          <p style={{ color: 'var(--text-muted)', maxWidth: 480, margin: '0 auto' }}>Start with a free consultation, then scale to a project or retainer when you're ready.</p>
+          <p className="eyebrow" style={{ textAlign: 'center' }}>Partnership models</p>
+          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.4rem)', marginBottom: '0.75rem' }}>Ways to grow with us</h1>
+          <p style={{ color: 'var(--text-muted)', maxWidth: 500, margin: '0 auto' }}>Start with a free discovery call, then choose the partnership that fits — from network membership to a full growth partnership.</p>
         </div>
       </section>
 

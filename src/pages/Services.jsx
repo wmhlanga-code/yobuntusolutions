@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Brain, Settings, Monitor, BarChart2, ShieldCheck, Network, TrendingUp } from 'lucide-react';
+import { ArrowRight, HeartHandshake, Network, Compass, Share2, Cpu, LineChart } from 'lucide-react';
 import { coreServices } from '../data/services';
+import { images } from '../data/images';
 import SEO from '../components/SEO';
 
-const iconMap = { Brain, Settings, Monitor, BarChart2, ShieldCheck, Network, TrendingUp };
+const iconMap = { HeartHandshake, Network, Compass, Share2, Cpu, LineChart };
 
 const colorMap = {
   green:  { bg: 'var(--primary-lt)', color: 'var(--primary)' },
@@ -15,43 +16,52 @@ const colorMap = {
 };
 
 const steps = [
-  { num: '1', title: 'Discover', desc: 'Deep-dive into your organisation: operations, data, goals, and pain points' },
-  { num: '2', title: 'Design', desc: 'Co-create a solution roadmap tailored to your budget and timeline' },
-  { num: '3', title: 'Deliver', desc: 'Implement, train, and integrate — with your team involved at every step' },
-  { num: '4', title: 'Sustain', desc: 'Ongoing support, reviews, and iteration as your organisation evolves' },
+  { num: '1', title: 'Understand', desc: 'We learn how your business really works — its strengths, constraints, customers, and where growth is stuck.' },
+  { num: '2', title: 'Connect', desc: 'We build a network around you: customers, suppliers, partners, funders, and opportunities that create mutual value.' },
+  { num: '3', title: 'Optimise', desc: 'Where it helps, we bring in AI and automation to cut costs, save time, and free your team for higher-value work.' },
+  { num: '4', title: 'Measure & repeat', desc: 'We document the results — revenue, partnerships, customers, time, cost — and keep working as your growth partner.' },
 ];
 
 const audiences = [
-  'Businesses', 'NGOs & nonprofits', 'Government entities',
-  'Schools & universities', 'Agricultural organisations', 'Health sector',
+  'Small & growing businesses', 'Restaurants & hospitality', 'Agriculture & food',
+  'Manufacturing & trade', 'NGOs & NPOs', 'Health & education',
 ];
 
 export default function Services() {
   return (
     <div>
       <SEO
-        title="Our Services — AI Consulting, Digital Transformation & Business Growth"
-        description="YoBuntu Solutions offers 7 tailored services to organisations across South Africa: AI & automation consulting, business process optimization, digital transformation, data analytics, AI ethics training, strategic networking, and growth consulting."
+        title="What We Do — Connections, Growth Partnership & AI Efficiency"
+        description="YoBuntu Solutions helps businesses grow: long-term growth partnership, business introductions, access to investors and government opportunities, strategic partnerships, AI-powered efficiency, and measured results."
         path="/services"
       />
+
       {/* Hero */}
       <section style={{ background: 'var(--primary-lt)', borderBottom: '1px solid #9FE1CB' }}>
         <div className="section-wrap">
-          <p className="eyebrow">What we do</p>
-          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', maxWidth: 620, marginBottom: '1rem' }}>
-            Tailored solutions for real business challenges
-          </h1>
-          <p style={{ color: 'var(--text-muted)', fontWeight: 300, maxWidth: 560, lineHeight: 1.7 }}>
-            We don't sell off-the-shelf packages. Every engagement begins with understanding your organisation — its goals, constraints, and opportunities — and then we build a solution around that.
-          </p>
+          <div className="split">
+            <div>
+              <p className="eyebrow">What we do</p>
+              <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 2.7rem)', maxWidth: 620, marginBottom: '1rem' }}>
+                Everything a real growth partner should do
+              </h1>
+              <p style={{ color: 'var(--text-muted)', fontWeight: 300, maxWidth: 560, lineHeight: 1.8 }}>
+                We don't sell off-the-shelf packages. We partner with your business, build a network around it, and use AI where it makes you more efficient — then we measure the results and keep going.
+              </p>
+            </div>
+            <div className="split-media">
+              <img className="media" src={images.handshake} alt="Business partners agreeing on a deal" style={{ height: 320 }} />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Service Cards */}
       <section>
         <div className="section-wrap">
-          <h2 style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>Our seven service areas</h2>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem' }}>Every service is shaped around your specific organisation, not a generic template.</p>
+          <p className="eyebrow" style={{ marginBottom: '0.4rem' }}>Our services</p>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '0.5rem' }}>Six ways we help you grow</h2>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem', maxWidth: 620 }}>Each one is shaped around your specific business — not a generic template. AI is one of these tools, not the headline.</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             {coreServices.map(s => {
               const IconComp = iconMap[s.icon];
@@ -80,15 +90,16 @@ export default function Services() {
       {/* How We Work */}
       <section style={{ background: 'var(--bg-secondary)', borderTop: '1px solid var(--border)' }}>
         <div className="section-wrap">
-          <h2 style={{ fontSize: '1.75rem', marginBottom: '0.5rem' }}>How we work</h2>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem' }}>A four-step process designed to deliver real outcomes.</p>
-          <div style={{ position: 'relative', maxWidth: 560 }}>
+          <p className="eyebrow" style={{ marginBottom: '0.4rem' }}>The partnership</p>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '0.5rem' }}>How we work with you</h2>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem' }}>A partnership loop designed to deliver real, measured outcomes — again and again.</p>
+          <div style={{ position: 'relative', maxWidth: 600 }}>
             <div style={{
               position: 'absolute', left: 19, top: 40, bottom: 40,
               width: 2, background: 'var(--border)',
             }} />
             {steps.map((s, i) => (
-              <div key={i} style={{ display: 'flex', gap: '1.25rem', marginBottom: i < steps.length - 1 ? '2rem' : 0, alignItems: 'flex-start', position: 'relative' }}>
+              <div key={i} style={{ display: 'flex', gap: '1.25rem', marginBottom: i < steps.length - 1 ? '1.75rem' : 0, alignItems: 'flex-start', position: 'relative' }}>
                 <div style={{
                   width: 40, height: 40, borderRadius: '50%',
                   background: 'var(--primary)', color: '#fff',
@@ -98,9 +109,9 @@ export default function Services() {
                 }}>
                   {s.num}
                 </div>
-                <div style={{ paddingTop: '0.5rem' }}>
+                <div style={{ paddingTop: '0.4rem' }}>
                   <h3 style={{ fontSize: '1.05rem', marginBottom: '0.25rem' }}>{s.title}</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{s.desc}</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.92rem', lineHeight: 1.6 }}>{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -111,7 +122,8 @@ export default function Services() {
       {/* Who We Work With */}
       <section>
         <div className="section-wrap">
-          <h2 style={{ fontSize: '1.75rem', marginBottom: '1.5rem' }}>Who we work with</h2>
+          <p className="eyebrow" style={{ marginBottom: '0.4rem' }}>Who we work with</p>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '1.5rem' }}>Businesses ready to grow</h2>
           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
             {audiences.map(a => (
               <span key={a} style={{
@@ -126,8 +138,8 @@ export default function Services() {
       {/* CTA */}
       <section style={{ background: 'var(--primary-lt)', borderTop: '1px solid #9FE1CB' }}>
         <div className="section-wrap" style={{ textAlign: 'center' }}>
-          <h2 style={{ fontSize: '1.75rem', marginBottom: '0.75rem' }}>Not sure which service fits?</h2>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '1.75rem' }}>Book a free 30-minute conversation and we'll work it out together.</p>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '0.75rem' }}>Let's build a network around your business</h2>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '1.75rem' }}>Book a free conversation and we'll map what growth could look like.</p>
           <Link to="/contact" className="btn-primary">
             Let's talk <ArrowRight size={16} aria-hidden="true" />
           </Link>

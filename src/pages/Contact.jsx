@@ -41,7 +41,7 @@ export default function Contact() {
           <p className="eyebrow">Get in touch</p>
           <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.4rem)' }}>Let's start a conversation</h1>
           <p style={{ color: 'var(--text-muted)', maxWidth: 560, marginTop: '0.75rem', lineHeight: 1.7 }}>
-            Whether you're exploring AI for the first time or ready to transform your operations — we'd love to hear about your organisation.
+            Whether you're a business ready to grow, a potential partner, or an investor — tell us about yourself and we'll show you what a network around your business could look like.
           </p>
         </div>
       </section>
@@ -90,18 +90,18 @@ export default function Contact() {
                 </div>
 
                 <div style={fieldStyle}>
-                  <label htmlFor="service" style={labelStyle}>Service interested in</label>
+                  <label htmlFor="service" style={labelStyle}>What are you interested in?</label>
                   <select id="service" value={form.service} onChange={set('service')} style={{ ...inputStyle, background: 'var(--bg)' }}
                     onFocus={e => e.target.style.borderColor = 'var(--primary)'}
                     onBlur={e => e.target.style.borderColor = 'var(--border)'}>
-                    <option value="">Select a service…</option>
-                    <option value="ai-automation">AI & Automation Consulting</option>
-                    <option value="process-optimization">Business Process Optimization</option>
-                    <option value="digital-transformation">Digital Transformation</option>
-                    <option value="data-analytics">Data Analytics & BI</option>
-                    <option value="ai-training">AI Training & Ethics</option>
-                    <option value="networking">Strategic Networking</option>
-                    <option value="growth-innovation">Growth & Innovation Consulting</option>
+                    <option value="">Select an option…</option>
+                    <option value="growth-partnership">Growth partnership</option>
+                    <option value="network-membership">Joining the network</option>
+                    <option value="introductions">Business introductions & connections</option>
+                    <option value="opportunities">Access to opportunities (investors, government, NGOs)</option>
+                    <option value="ai-efficiency">AI-powered efficiency</option>
+                    <option value="partner">Becoming a partner in the network</option>
+                    <option value="investor">Investor enquiry</option>
                     <option value="general">General enquiry</option>
                   </select>
                 </div>

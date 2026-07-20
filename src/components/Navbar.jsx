@@ -13,10 +13,11 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { to: '/services', label: 'Services' },
-    { to: '/network', label: 'Our Network' },
+    { to: '/network', label: 'The Network' },
+    { to: '/services', label: 'What We Do' },
+    { to: '/pilot', label: 'Pilot' },
     { to: '/about', label: 'About' },
-    { to: '/pricing', label: 'Pricing' },
+    { to: '/pricing', label: 'Partnership' },
     { to: '/contact', label: 'Contact' },
   ];
 
@@ -131,7 +132,7 @@ export default function Navbar() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <Link to="/contact" className="btn-primary desktop-nav" style={{ fontSize: '0.88rem', padding: '0.55rem 1.1rem' }}>
-            Book a consultation →
+            Become a partner →
           </Link>
           <button
             onClick={() => setOpen(o => !o)}
@@ -160,7 +161,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <Link to="/contact" className="btn-primary" style={{ marginTop: '0.5rem', justifyContent: 'center' }} onClick={() => setOpen(false)}>
-            Book a consultation →
+            Become a partner →
           </Link>
         </div>
       )}
