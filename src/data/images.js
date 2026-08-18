@@ -10,8 +10,6 @@ const unsplash = (id, w = 1200, h = 0) =>
 // deliberately chosen so no stranger's face is used to represent YoBuntu's team or
 // clients. Swap in real YoBuntu photography here once it's available.
 export const images = {
-  // Empty modern boardroom — used on the home hero
-  heroBoard:      unsplash('1497366811353-6870744d04b2', 1600, 1000),
   // Hands collaborating on a laptop
   collaboration:  unsplash('1516321318423-f06f85e504b3', 1200, 800),
   // Business handshake / introductions (hands only)

@@ -9,12 +9,20 @@ export default function Footer() {
 
   return (
     <footer style={{ background: 'var(--bg-secondary)', borderTop: '1px solid var(--border)', marginTop: 'auto' }}>
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '3rem 1.5rem 1.5rem', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem' }} className="footer-grid">
-        <div style={col}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.25rem' }}>
-            <img src={logoMark} alt="YoBuntu Solutions" style={{ width: 32, height: 32, borderRadius: 7, objectFit: 'cover', flexShrink: 0 }} />
-            <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '1rem' }}>YoBuntu Solutions</span>
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '3rem 1.5rem 0' }}>
+        <div className="seal-wrap">
+          <div className="seal-ring">
+            <div className="seal-core">
+              <img src={logoMark} alt="" aria-hidden="true" />
+            </div>
           </div>
+          <p className="seal-plate">YoBuntu Solutions (Pty) Ltd</p>
+          <p className="seal-sub">Registered in South Africa · Nkomazi, Mpumalanga</p>
+        </div>
+      </div>
+
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '2.5rem 1.5rem 1.5rem', borderTop: '1px solid var(--border)', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem' }} className="footer-grid">
+        <div style={col}>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>A business growth &amp; network company. We connect businesses to the people, technology, and opportunities they need to grow.</p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
             <MapPin size={14} aria-hidden="true" /> Nkomazi, Mpumalanga, South Africa

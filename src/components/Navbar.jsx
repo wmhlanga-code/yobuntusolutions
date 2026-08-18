@@ -58,6 +58,7 @@ export default function Navbar() {
     display: 'block',
     flexShrink: 0,
     objectFit: 'cover',
+    boxShadow: '0 2px 6px rgba(26,39,84,0.25), inset 0 1px 1px rgba(255,255,255,0.35), inset 0 -1px 2px rgba(26,39,84,0.2)',
   };
 
   const logoTextStyle = {
@@ -108,8 +109,8 @@ export default function Navbar() {
     <nav style={navStyle}>
       <div style={innerStyle}>
         <Link to="/" style={logoStyle}>
-          <img src={logoMark} alt="YoBuntu Solutions" style={logoMarkStyle} />
-          <span style={logoTextStyle}>YoBuntu Solutions</span>
+          <img src={logoMark} alt="YoBuntu Solutions (Pty) Ltd" style={logoMarkStyle} />
+          <span style={logoTextStyle}>YoBuntu Solutions (Pty) Ltd</span>
         </Link>
 
         <div style={desktopLinksStyle} className="desktop-nav">

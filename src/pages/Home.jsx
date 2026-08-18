@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Network, HeartHandshake, Cpu, ArrowRight, CheckCircle, X,
@@ -6,7 +7,7 @@ import {
 import { coreServices } from '../data/services';
 import { images } from '../data/images';
 import SEO from '../components/SEO';
-import pilotTeaser from '../assets/divine/pilot-teaser.jpg';
+import pilotTeaser from '../assets/divine/pilot-goal.jpg';
 
 const iconMap = { HeartHandshake, Network, Compass, Share2, Cpu, LineChart };
 
@@ -72,6 +73,36 @@ const compareRows = [
 ];
 
 export default function Home() {
+  const [scrollY, setScrollY] = useState(0);
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setReducedMotion(mq.matches);
+  }, []);
+
+  useEffect(() => {
+    if (reducedMotion) return;
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        setScrollY(window.scrollY);
+        ticking = false;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [reducedMotion]);
+
+  const heroProgress = Math.min(scrollY / 560, 1);
+  const sphereTransform = (rate, scaleAmt) => {
+    const y = reducedMotion ? 0 : scrollY * rate;
+    const scale = reducedMotion ? 1 : 1 + heroProgress * scaleAmt;
+    return `translate3d(0, ${y}px, 0) scale(${scale})`;
+  };
+
   return (
     <div>
       <SEO
@@ -80,13 +111,29 @@ export default function Home() {
       />
 
       {/* Hero */}
-      <section style={{ position: 'relative', overflow: 'hidden', minHeight: 560, display: 'flex', alignItems: 'center' }}>
-        <img src={images.heroBoard} alt="" aria-hidden="true" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-        <div style={{
-          position: 'absolute', inset: 0,
-          background: 'linear-gradient(100deg, rgba(26,39,84,0.95) 0%, rgba(11,123,148,0.90) 45%, rgba(11,123,148,0.55) 100%)',
-        }} />
-        <div className="section-wrap" style={{ position: 'relative', paddingTop: '5.5rem', paddingBottom: '5.5rem', color: '#fff', width: '100%' }}>
+      <section style={{ position: 'relative', overflow: 'hidden', minHeight: 600, display: 'flex', alignItems: 'center', background: 'linear-gradient(135deg, #0B1730 0%, #14213D 45%, #0B5C77 100%)' }}>
+        <div
+          className="hero-sphere-layer hero-sphere-layer--cyan"
+          aria-hidden="true"
+          style={{ transform: sphereTransform(0.32, 0.22), opacity: 1 - heroProgress * 0.9 }}
+        >
+          <div className="hero-sphere hero-sphere--cyan" />
+        </div>
+        <div
+          className="hero-sphere-layer hero-sphere-layer--coral"
+          aria-hidden="true"
+          style={{ transform: sphereTransform(0.2, 0.15), opacity: 1 - heroProgress * 0.9 }}
+        >
+          <div className="hero-sphere hero-sphere--coral" />
+        </div>
+        <div
+          className="hero-sphere-layer hero-sphere-layer--magenta"
+          aria-hidden="true"
+          style={{ transform: sphereTransform(0.48, 0.3), opacity: 1 - heroProgress * 0.9 }}
+        >
+          <div className="hero-sphere hero-sphere--magenta" />
+        </div>
+        <div className="section-wrap" style={{ position: 'relative', zIndex: 2, paddingTop: '5.5rem', paddingBottom: '5.5rem', color: '#fff', width: '100%' }}>
           <p className="eyebrow" style={{ color: '#5EE7F5' }}>
             <span className="eyebrow-line" /> Business growth &amp; network company · South Africa
           </p>
@@ -108,6 +155,41 @@ export default function Home() {
             }}>How the network works</Link>
           </div>
         </div>
+
+        <style>{`
+          .hero-sphere-layer { position: absolute; pointer-events: none; z-index: 1; will-change: transform, opacity; }
+          .hero-sphere-layer--cyan    { width: 380px; height: 380px; top: -90px; right: -70px; }
+          .hero-sphere-layer--coral   { width: 190px; height: 190px; bottom: -50px; left: 4%; }
+          .hero-sphere-layer--magenta { width: 116px; height: 116px; top: 60%; right: 16%; }
+
+          .hero-sphere { width: 100%; height: 100%; border-radius: 50%; }
+          .hero-sphere--cyan {
+            background: radial-gradient(circle at 32% 28%, #C9FBFF 0%, #4DEAFB 20%, #0C8FA0 54%, #0B3A55 84%, #071B33 100%);
+            box-shadow: 0 50px 90px rgba(3,12,26,0.55), inset -14px -18px 34px rgba(0,0,0,0.28);
+          }
+          .hero-sphere--coral {
+            background: radial-gradient(circle at 32% 28%, #FFE3D2 0%, #F2916B 22%, #C1503A 58%, #6E2416 92%);
+            box-shadow: 0 30px 55px rgba(3,12,26,0.5), inset -8px -10px 20px rgba(0,0,0,0.25);
+          }
+          .hero-sphere--magenta {
+            background: radial-gradient(circle at 34% 30%, rgba(255,214,240,0.95) 0%, rgba(213,72,150,0.88) 32%, rgba(141,30,102,0.92) 68%, rgba(70,15,51,0.92) 100%);
+            box-shadow: 0 20px 38px rgba(3,12,26,0.45), inset -6px -8px 14px rgba(0,0,0,0.25);
+          }
+          @media (prefers-reduced-motion: no-preference) {
+            .hero-sphere--cyan { animation: heroFloat 9s ease-in-out infinite; }
+            .hero-sphere--coral { animation: heroFloat 11s ease-in-out infinite 1s; }
+            .hero-sphere--magenta { animation: heroFloat 7s ease-in-out infinite 0.5s; }
+          }
+          @keyframes heroFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-16px); }
+          }
+          @media (max-width: 640px) {
+            .hero-sphere-layer--cyan    { width: 220px; height: 220px; }
+            .hero-sphere-layer--coral   { width: 110px; height: 110px; }
+            .hero-sphere-layer--magenta { display: none; }
+          }
+        `}</style>
       </section>
 
       {/* Ubuntu Banner */}
@@ -268,7 +350,7 @@ export default function Home() {
         <div className="section-wrap">
           <div className="split reverse">
             <div className="split-media">
-              <img className="media" src={pilotTeaser} alt="A spread of Divine Projects catering sides" style={{ height: 340 }} />
+              <img className="media" src={pilotTeaser} alt="The Divine Projects logo" style={{ height: 340, objectFit: 'contain', background: '#000' }} />
             </div>
             <div>
               <p className="chip" style={{ marginBottom: '1rem' }}><Utensils size={15} aria-hidden="true" /> Pilot · Divine Projects</p>
