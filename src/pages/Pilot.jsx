@@ -93,7 +93,7 @@ export default function Pilot() {
               </p>
             </div>
             <div className="split-media">
-              <img className="media" src={pilotGoal} alt="A Divine Projects catering platter" style={{ height: 360 }} />
+              <img className="media" src={pilotGoal} alt="The Divine Projects logo" style={{ height: 360, objectFit: 'contain', background: '#000' }} />
             </div>
           </div>
         </div>
