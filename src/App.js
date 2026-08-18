@@ -16,9 +16,9 @@ const STRUCTURED_DATA = {
   '@type': 'ProfessionalService',
   name: 'YoBuntu Solutions (Pty) Ltd',
   description: 'A business growth and network company helping businesses grow by connecting them to the customers, partners, investors, technology, and opportunities they need to succeed.',
-  url: 'https://www.yobuntusolutions.co.za',
-  logo: 'https://www.yobuntusolutions.co.za/logo192.png',
-  image: 'https://www.yobuntusolutions.co.za/og-image.png',
+  url: 'https://yobuntusolutions.com',
+  logo: 'https://yobuntusolutions.com/logo192.png',
+  image: 'https://yobuntusolutions.com/og-image.png',
   telephone: '+27762505608',
   email: 'Yobuntusolutions@gmail.com',
   address: {

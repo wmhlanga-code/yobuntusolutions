@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 const SITE_NAME = 'YoBuntu Solutions';
-const SITE_URL = 'https://www.yobuntusolutions.co.za';
+const SITE_URL = 'https://yobuntusolutions.com';
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
 export default function SEO({ title, description, path = '/', image = DEFAULT_IMAGE }) {
