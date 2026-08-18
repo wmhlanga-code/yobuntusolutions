@@ -4,10 +4,39 @@ import { images } from '../data/images';
 import SEO from '../components/SEO';
 
 const founders = [
-  { name: 'Wethu Mhlanga', title: 'Co-Founder', initials: 'WM', bg: 'var(--deep)' },
-  { name: 'Junior Nkosi', title: 'Co-Founder', initials: 'JN', bg: 'var(--primary)' },
-  { name: 'Marcos Tibane', title: 'Co-Founder', initials: 'MT', bg: 'var(--purple)' },
+  {
+    name: 'Wethu Mhlanga',
+    title: 'Co-Founder',
+    role: 'Data Science & Economics student at Macalester College',
+    initials: 'WM',
+    bg: 'var(--deep)',
+    linkedin: 'https://www.linkedin.com/in/wethu-mhlanga-b47953275',
+  },
+  {
+    name: 'Junior Nkosi',
+    title: 'Co-Founder',
+    role: 'Program Associate at Imagine Scholar',
+    initials: 'JN',
+    bg: 'var(--primary)',
+    linkedin: 'https://www.linkedin.com/in/junior-nkosi-6989b2259',
+  },
+  {
+    name: 'Marcos Tibane',
+    title: 'Co-Founder',
+    role: 'Program Associate at Imagine Scholar',
+    initials: 'MT',
+    bg: 'var(--purple)',
+    linkedin: 'https://www.linkedin.com/in/marcos-tibane-0957a925a',
+  },
 ];
+
+function LinkedinIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" width={16} height={16} aria-hidden="true" {...props}>
+      <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.11 20.45H3.56V9h3.55v11.45z" />
+    </svg>
+  );
+}
 
 const values = [
   { Icon: HeartHandshake, title: 'We stay', desc: 'We don\'t deliver advice and disappear. We\'re a long-term growth partner, invested in results that show up over years.', bg: 'var(--primary-lt)', color: 'var(--primary)' },
@@ -132,7 +161,21 @@ export default function About() {
                   marginBottom: '0.5rem',
                 }}>{f.initials}</div>
                 <h3 style={{ fontSize: '1.05rem' }}>{f.name}</h3>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>{f.title}</p>
+                <p style={{ color: 'var(--primary)', fontSize: '0.85rem', fontWeight: 500 }}>{f.title}</p>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', lineHeight: 1.5 }}>{f.role}</p>
+                <a
+                  href={f.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${f.name} on LinkedIn`}
+                  style={{
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                    width: 32, height: 32, borderRadius: '50%',
+                    background: 'var(--primary-lt)', color: 'var(--primary)', marginTop: '0.25rem',
+                  }}
+                >
+                  <LinkedinIcon />
+                </a>
               </div>
             ))}
           </div>
