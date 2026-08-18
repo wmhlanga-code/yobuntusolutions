@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Sparkles, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logoMark from '../assets/logo-mark.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -53,12 +54,10 @@ export default function Navbar() {
   const logoMarkStyle = {
     width: 34,
     height: 34,
-    background: 'var(--primary)',
     borderRadius: 8,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: 'block',
     flexShrink: 0,
+    objectFit: 'cover',
   };
 
   const logoTextStyle = {
@@ -109,9 +108,7 @@ export default function Navbar() {
     <nav style={navStyle}>
       <div style={innerStyle}>
         <Link to="/" style={logoStyle}>
-          <div style={logoMarkStyle}>
-            <Sparkles size={18} color="#fff" aria-hidden="true" />
-          </div>
+          <img src={logoMark} alt="YoBuntu Solutions" style={logoMarkStyle} />
           <span style={logoTextStyle}>YoBuntu Solutions</span>
         </Link>
 

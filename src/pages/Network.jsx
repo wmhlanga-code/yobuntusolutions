@@ -74,7 +74,7 @@ export default function Network() {
               </p>
             </div>
             <div className="split-media">
-              <img className="media" src={images.meeting} alt="Professionals connecting at a business meeting" style={{ height: 320 }} />
+              <img className="media" src={images.meeting} alt="Glass-walled office meeting rooms" style={{ height: 320 }} />
             </div>
           </div>
         </div>
@@ -128,10 +128,10 @@ export default function Network() {
             <div>
               <p className="eyebrow">The network effect</p>
               <h2 style={{ fontSize: '1.9rem', marginBottom: '1rem' }}>Every business that joins makes the network more valuable</h2>
-              <p style={{ color: 'rgba(234,250,244,0.85)', lineHeight: 1.8, marginBottom: '1rem' }}>
+              <p style={{ color: 'rgba(224,247,251,0.85)', lineHeight: 1.8, marginBottom: '1rem' }}>
                 A directory gets more crowded as it grows. A network gets more valuable. Each new business adds new customers, suppliers, and opportunities that every other member can tap into.
               </p>
-              <p style={{ color: 'rgba(234,250,244,0.85)', lineHeight: 1.8 }}>
+              <p style={{ color: 'rgba(224,247,251,0.85)', lineHeight: 1.8 }}>
                 That compounding value is what turns a group of businesses into an ecosystem — and it's why joining early matters.
               </p>
             </div>

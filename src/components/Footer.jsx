@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Sparkles, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
+import logoMark from '../assets/logo-mark.png';
 
 export default function Footer() {
   const col = { display: 'flex', flexDirection: 'column', gap: '0.75rem' };
@@ -11,9 +12,7 @@ export default function Footer() {
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '3rem 1.5rem 1.5rem', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem' }} className="footer-grid">
         <div style={col}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.25rem' }}>
-            <div style={{ width: 32, height: 32, background: 'var(--primary)', borderRadius: 7, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Sparkles size={16} color="#fff" aria-hidden="true" />
-            </div>
+            <img src={logoMark} alt="YoBuntu Solutions" style={{ width: 32, height: 32, borderRadius: 7, objectFit: 'cover', flexShrink: 0 }} />
             <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '1rem' }}>YoBuntu Solutions</span>
           </div>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>A business growth &amp; network company. We connect businesses to the people, technology, and opportunities they need to grow.</p>
@@ -31,7 +30,7 @@ export default function Footer() {
             { to: '/services', label: 'Strategic Partnerships' },
             { to: '/services', label: 'AI-Powered Efficiency' },
             { to: '/services', label: 'Results Measurement' },
-            { to: '/pilot', label: 'The Divine Project Pilot' },
+            { to: '/pilot', label: 'The Divine Projects Pilot' },
           ].map((l, i) => (
             <Link key={i} to={l.to} style={linkStyle} onMouseEnter={e => e.target.style.color = 'var(--primary)'} onMouseLeave={e => e.target.style.color = 'var(--text-muted)'}>{l.label}</Link>
           ))}
@@ -52,7 +51,7 @@ export default function Footer() {
       </div>
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '1rem 1.5rem', borderTop: '1px solid var(--border)', color: 'var(--text-muted)', fontSize: '0.83rem' }}>
-        © 2025 YoBuntu Solutions · Nkomazi, Mpumalanga · A business growth &amp; network company
+        © 2025 YoBuntu Solutions (Pty) Ltd · Nkomazi, Mpumalanga · A business growth &amp; network company
       </div>
 
       <style>{`

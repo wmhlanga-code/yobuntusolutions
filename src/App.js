@@ -14,7 +14,7 @@ import Contact from './pages/Contact';
 const STRUCTURED_DATA = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'YoBuntu Solutions',
+  name: 'YoBuntu Solutions (Pty) Ltd',
   description: 'A business growth and network company helping businesses grow by connecting them to the customers, partners, investors, technology, and opportunities they need to succeed.',
   url: 'https://www.yobuntusolutions.co.za',
   logo: 'https://www.yobuntusolutions.co.za/logo192.png',

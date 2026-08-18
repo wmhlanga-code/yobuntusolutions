@@ -3,6 +3,12 @@ import { ArrowRight, HeartHandshake, Network, Repeat, Heart, Quote } from 'lucid
 import { images } from '../data/images';
 import SEO from '../components/SEO';
 
+const founders = [
+  { name: 'Wethu Mhlanga', title: 'Co-Founder', initials: 'WM', bg: 'var(--deep)' },
+  { name: 'Junior Nkosi', title: 'Co-Founder', initials: 'JN', bg: 'var(--primary)' },
+  { name: 'Marcos Tibane', title: 'Co-Founder', initials: 'MT', bg: 'var(--purple)' },
+];
+
 const values = [
   { Icon: HeartHandshake, title: 'We stay', desc: 'We don\'t deliver advice and disappear. We\'re a long-term growth partner, invested in results that show up over years.', bg: 'var(--primary-lt)', color: 'var(--primary)' },
   { Icon: Network, title: 'We connect', desc: 'Growth comes from relationships. We build a network of customers, suppliers, partners, and opportunities around every business.', bg: 'var(--blue-lt)', color: 'var(--blue)' },
@@ -33,7 +39,7 @@ export default function About() {
               </p>
             </div>
             <div className="split-media">
-              <img className="media" src={images.professional} alt="A business professional at work" style={{ height: 340 }} />
+              <img className="media" src={images.professional} alt="Hands at work on a laptop" style={{ height: 340 }} />
             </div>
           </div>
         </div>
@@ -78,10 +84,10 @@ export default function About() {
             <div>
               <p className="eyebrow">The long-term vision</p>
               <h2 style={{ fontSize: '1.9rem', marginBottom: '1rem' }}>Not the biggest consultancy — the largest trusted network</h2>
-              <p style={{ color: 'rgba(234,250,244,0.85)', lineHeight: 1.8, marginBottom: '1rem' }}>
+              <p style={{ color: 'rgba(224,247,251,0.85)', lineHeight: 1.8, marginBottom: '1rem' }}>
                 We're building an ecosystem where every business that joins increases the value of the network for everyone else. As it grows, businesses discover opportunities they never would have found on their own.
               </p>
-              <p style={{ color: 'rgba(234,250,244,0.85)', lineHeight: 1.8 }}>
+              <p style={{ color: 'rgba(224,247,251,0.85)', lineHeight: 1.8 }}>
                 We start in South Africa, prove the model consistently helps businesses grow, and then expand into other countries. The businesses change; the playbook stays the same.
               </p>
             </div>
@@ -104,6 +110,29 @@ export default function About() {
                   <h3 style={{ fontSize: '1.05rem', marginBottom: '0.4rem' }}>{v.title}</h3>
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>{v.desc}</p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Founders */}
+      <section style={{ background: 'var(--bg-secondary)', borderTop: '1px solid var(--border)' }}>
+        <div className="section-wrap">
+          <p className="eyebrow" style={{ marginBottom: '0.4rem' }}>Who's behind it</p>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '2.5rem' }}>Founders</h2>
+          <div className="grid-3">
+            {founders.map((f, i) => (
+              <div key={i} className="card" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  width: 88, height: 88, borderRadius: '50%',
+                  background: f.bg, color: '#fff',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '1.6rem',
+                  marginBottom: '0.5rem',
+                }}>{f.initials}</div>
+                <h3 style={{ fontSize: '1.05rem' }}>{f.name}</h3>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>{f.title}</p>
               </div>
             ))}
           </div>

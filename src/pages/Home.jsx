@@ -6,6 +6,7 @@ import {
 import { coreServices } from '../data/services';
 import { images } from '../data/images';
 import SEO from '../components/SEO';
+import pilotTeaser from '../assets/divine/pilot-teaser.jpg';
 
 const iconMap = { HeartHandshake, Network, Compass, Share2, Cpu, LineChart };
 
@@ -83,15 +84,15 @@ export default function Home() {
         <img src={images.heroBoard} alt="" aria-hidden="true" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(100deg, rgba(8,80,65,0.95) 0%, rgba(15,110,86,0.90) 45%, rgba(15,110,86,0.55) 100%)',
+          background: 'linear-gradient(100deg, rgba(26,39,84,0.95) 0%, rgba(11,123,148,0.90) 45%, rgba(11,123,148,0.55) 100%)',
         }} />
         <div className="section-wrap" style={{ position: 'relative', paddingTop: '5.5rem', paddingBottom: '5.5rem', color: '#fff', width: '100%' }}>
-          <p className="eyebrow" style={{ color: '#7FE8C6' }}>
+          <p className="eyebrow" style={{ color: '#5EE7F5' }}>
             <span className="eyebrow-line" /> Business growth &amp; network company · South Africa
           </p>
           <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)', maxWidth: 780, marginBottom: '1.25rem', color: '#fff' }}>
             We help businesses grow through the right{' '}
-            <em style={{ color: '#7FE8C6', fontStyle: 'italic' }}>connections</em>, resources, and support
+            <em style={{ color: '#5EE7F5', fontStyle: 'italic' }}>connections</em>, resources, and support
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.9)', fontWeight: 300, fontSize: '1.1rem', maxWidth: 620, marginBottom: '2.25rem', lineHeight: 1.7 }}>
             Most businesses don't fail because they have bad products — they fail because they lack the right connections, resources, and support system. YoBuntu Solutions exists to solve that. We become your long-term growth partner and build a network around your business.
@@ -133,7 +134,7 @@ export default function Home() {
               </p>
             </div>
             <div className="split-media">
-              <img className="media" src={images.collaboration} alt="Business partners collaborating around a table" style={{ height: 380 }} />
+              <img className="media" src={images.collaboration} alt="Hands collaborating on a laptop" style={{ height: 380 }} />
             </div>
           </div>
         </div>
@@ -224,11 +225,11 @@ export default function Home() {
             <div>
               <p className="eyebrow">The vision</p>
               <h2 style={{ fontSize: '1.9rem', marginBottom: '1rem' }}>An ecosystem where every business makes the network stronger</h2>
-              <p style={{ color: 'rgba(234,250,244,0.85)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
+              <p style={{ color: 'rgba(224,247,251,0.85)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
                 As the network grows, businesses discover opportunities they never would have found alone. Every business that joins increases the value of the network for everyone else — a genuine network effect.
               </p>
               <blockquote style={{
-                borderLeft: '3px solid #7FE8C6', paddingLeft: '1.25rem',
+                borderLeft: '3px solid #5EE7F5', paddingLeft: '1.25rem',
                 fontFamily: "'Playfair Display', serif", fontStyle: 'italic',
                 fontSize: '1.2rem', lineHeight: 1.5, color: '#fff',
               }}>
@@ -267,13 +268,13 @@ export default function Home() {
         <div className="section-wrap">
           <div className="split reverse">
             <div className="split-media">
-              <img className="media" src={images.restaurant} alt="Divine Project restaurant interior" style={{ height: 340 }} />
+              <img className="media" src={pilotTeaser} alt="A spread of Divine Projects catering sides" style={{ height: 340 }} />
             </div>
             <div>
-              <p className="chip" style={{ marginBottom: '1rem' }}><Utensils size={15} aria-hidden="true" /> Pilot · Divine Project</p>
+              <p className="chip" style={{ marginBottom: '1rem' }}><Utensils size={15} aria-hidden="true" /> Pilot · Divine Projects</p>
               <h2 style={{ fontSize: '1.9rem', marginBottom: '1rem' }}>We're proving the model, not just pitching it</h2>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '1.5rem' }}>
-                Our first pilot is Divine Project, a restaurant and culinary business in South Africa. We're building an entire support ecosystem around them — corporate catering partnerships, event planners, food suppliers, delivery partners, and AI tools that cut costs — and documenting every result.
+                Our first pilot is Divine Projects, a catering, events, and rides business based in Sidlamafa, Mpumalanga. We're building an entire support ecosystem around them — corporate catering partnerships, event planners, food suppliers, transport partners, and AI tools that cut costs — and documenting every result.
               </p>
               <Link to="/pilot" className="btn-primary">See the pilot <ArrowRight size={16} aria-hidden="true" /></Link>
             </div>
