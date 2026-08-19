@@ -33,7 +33,7 @@ export default function Contact() {
     <div>
       <SEO
         title="Contact Us — Book a Free Consultation"
-        description="Book a free 30-minute consultation with YoBuntu Solutions. We work with organisations across South Africa on AI consulting, business process optimization, digital transformation, and growth strategy."
+        description="Book a free 30-minute consultation with YoBuntu Solution. We work with organisations across South Africa on AI consulting, business process optimization, digital transformation, and growth strategy."
         path="/contact"
       />
       <section style={{ background: 'var(--bg-secondary)', borderBottom: '1px solid var(--border)' }}>

@@ -82,7 +82,7 @@ export default function Pricing() {
     <div>
       <SEO
         title="Pricing — Free Consultation to Enterprise Engagements"
-        description="Transparent pricing from YoBuntu Solutions. Start with a free 30-minute strategy consultation and scale to project engagements, monthly retainers, or large-scale enterprise transformation."
+        description="Transparent pricing from YoBuntu Solution. Start with a free 30-minute strategy consultation and scale to project engagements, monthly retainers, or large-scale enterprise transformation."
         path="/pricing"
       />
       {/* Hero */}

@@ -109,8 +109,8 @@ export default function Navbar() {
     <nav style={navStyle}>
       <div style={innerStyle}>
         <Link to="/" style={logoStyle}>
-          <img src={logoMark} alt="YoBuntu Solutions (Pty) Ltd" style={logoMarkStyle} />
-          <span style={logoTextStyle}>YoBuntu Solutions (Pty) Ltd</span>
+          <img src={logoMark} alt="YoBuntu Solution (Pty) Ltd" style={logoMarkStyle} />
+          <span style={logoTextStyle}>YoBuntu Solution (Pty) Ltd</span>
         </Link>
 
         <div style={desktopLinksStyle} className="desktop-nav">

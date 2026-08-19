@@ -32,7 +32,7 @@ export default function Services() {
     <div>
       <SEO
         title="What We Do — Connections, Growth Partnership & AI Efficiency"
-        description="YoBuntu Solutions helps businesses grow: long-term growth partnership, business introductions, access to investors and government opportunities, strategic partnerships, AI-powered efficiency, and measured results."
+        description="YoBuntu Solution helps businesses grow: long-term growth partnership, business introductions, access to investors and government opportunities, strategic partnerships, AI-powered efficiency, and measured results."
         path="/services"
       />
 

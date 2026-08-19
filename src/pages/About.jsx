@@ -50,7 +50,7 @@ export default function About() {
     <div>
       <SEO
         title="About Us — A Business Growth & Network Company"
-        description="YoBuntu Solutions is a South African business growth and network company. We believe most businesses fail from a lack of connections, not bad products — so we become a long-term growth partner and build a network around every business."
+        description="YoBuntu Solution is a South African business growth and network company. We believe most businesses fail from a lack of connections, not bad products — so we become a long-term growth partner and build a network around every business."
         path="/about"
       />
 
@@ -64,7 +64,7 @@ export default function About() {
                 A business growth &amp; network company
               </h1>
               <p style={{ color: 'var(--text-muted)', fontWeight: 300, maxWidth: 600, lineHeight: 1.8 }}>
-                YoBuntu Solutions helps businesses grow by connecting them to the people, technology, and opportunities they need to succeed. AI is one of the tools we use — but the real business is the network, and the long-term partnership behind it.
+                YoBuntu Solution helps businesses grow by connecting them to the people, technology, and opportunities they need to succeed. AI is one of the tools we use — but the real business is the network, and the long-term partnership behind it.
               </p>
             </div>
             <div className="split-media">
@@ -190,7 +190,7 @@ export default function About() {
           <div className="card" style={{ background: 'var(--bg)', padding: '2rem', display: 'flex', gap: '1.25rem', alignItems: 'flex-start' }}>
             <Quote size={32} color="var(--primary)" style={{ flexShrink: 0 }} aria-hidden="true" />
             <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.2rem', lineHeight: 1.6, fontStyle: 'italic' }}>
-              &ldquo;YoBuntu Solutions is building the infrastructure that helps businesses grow by connecting them to the people, technology, and opportunities they need to succeed. Every business we add strengthens the network for every other business, creating long-term value that scales across industries and countries.&rdquo;
+              &ldquo;YoBuntu Solution is building the infrastructure that helps businesses grow by connecting them to the people, technology, and opportunities they need to succeed. Every business we add strengthens the network for every other business, creating long-term value that scales across industries and countries.&rdquo;
             </p>
           </div>
           <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, marginTop: '1.5rem' }}>

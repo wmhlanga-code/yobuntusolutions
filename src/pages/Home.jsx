@@ -107,7 +107,7 @@ export default function Home() {
     <div>
       <SEO
         path="/"
-        description="YoBuntu Solutions is a South African business growth and network company. We help businesses grow by connecting them to the customers, partners, investors, technology, and opportunities they need to succeed."
+        description="YoBuntu Solution is a South African business growth and network company. We help businesses grow by connecting them to the customers, partners, investors, technology, and opportunities they need to succeed."
       />
 
       {/* Hero */}
@@ -142,7 +142,7 @@ export default function Home() {
             <em style={{ color: '#5EE7F5', fontStyle: 'italic' }}>connections</em>, resources, and support
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.9)', fontWeight: 300, fontSize: '1.1rem', maxWidth: 620, marginBottom: '2.25rem', lineHeight: 1.7 }}>
-            Most businesses don't fail because they have bad products — they fail because they lack the right connections, resources, and support system. YoBuntu Solutions exists to solve that. We become your long-term growth partner and build a network around your business.
+            Most businesses don't fail because they have bad products — they fail because they lack the right connections, resources, and support system. YoBuntu Solution exists to solve that. We become your long-term growth partner and build a network around your business.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn-primary" style={{ background: '#fff', color: 'var(--deep)', borderColor: '#fff' }}>
@@ -212,7 +212,7 @@ export default function Home() {
                 Traditional consultants give recommendations and leave. Directories just list businesses. Networking events happen once and end. None of them stay to make sure a business actually grows.
               </p>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                YoBuntu Solutions is different. We partner with each business and become a long-term growth partner — actively building a network of customers, suppliers, partners, and opportunities around it, then using AI to make it more efficient along the way.
+                YoBuntu Solution is different. We partner with each business and become a long-term growth partner — actively building a network of customers, suppliers, partners, and opportunities around it, then using AI to make it more efficient along the way.
               </p>
             </div>
             <div className="split-media">

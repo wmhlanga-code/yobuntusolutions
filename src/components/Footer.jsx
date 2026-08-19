@@ -16,7 +16,7 @@ export default function Footer() {
               <img src={logoMark} alt="" aria-hidden="true" />
             </div>
           </div>
-          <p className="seal-plate">YoBuntu Solutions (Pty) Ltd</p>
+          <p className="seal-plate">YoBuntu Solution (Pty) Ltd</p>
           <p className="seal-sub">Registered in South Africa · Nkomazi, Mpumalanga</p>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '1rem 1.5rem', borderTop: '1px solid var(--border)', color: 'var(--text-muted)', fontSize: '0.83rem' }}>
-        © 2025 YoBuntu Solutions (Pty) Ltd · Nkomazi, Mpumalanga · A business growth &amp; network company
+        © 2025 YoBuntu Solution (Pty) Ltd · Nkomazi, Mpumalanga · A business growth &amp; network company
       </div>
 
       <style>{`

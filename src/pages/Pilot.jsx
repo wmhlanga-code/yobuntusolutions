@@ -49,7 +49,7 @@ export default function Pilot() {
     <div>
       <SEO
         title="Pilot — Divine Projects | Proving the Growth Model"
-        description="Divine Projects is YoBuntu Solutions' first pilot: a catering, events, and rides business based in Sidlamafa, Mpumalanga. We are building a full support ecosystem around it and documenting every result to prove the model works."
+        description="Divine Projects is YoBuntu Solution's first pilot: a catering, events, and rides business based in Sidlamafa, Mpumalanga. We are building a full support ecosystem around it and documenting every result to prove the model works."
         path="/pilot"
       />
 
@@ -122,7 +122,7 @@ export default function Pilot() {
                 <MapPin size={20} color="var(--coral)" aria-hidden="true" />
               </div>
               <h3 style={{ fontSize: '1.02rem' }}>Based in Mpumalanga</h3>
-              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>Sidlamafa, Nkomazi — the same region YoBuntu Solutions calls home.</p>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>Sidlamafa, Nkomazi — the same region YoBuntu Solution calls home.</p>
             </div>
           </div>
         </div>

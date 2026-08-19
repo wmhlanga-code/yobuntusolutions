@@ -56,7 +56,7 @@ export default function Network() {
     <div>
       <SEO
         title="The Network — Connections, Partnerships & the Network Effect"
-        description="YoBuntu Solutions is building the largest trusted business network. We connect businesses to customers, suppliers, partners, investors, NGOs, and government opportunities — and every business we add strengthens the network for everyone else."
+        description="YoBuntu Solution is building the largest trusted business network. We connect businesses to customers, suppliers, partners, investors, NGOs, and government opportunities — and every business we add strengthens the network for everyone else."
         path="/network"
       />
 
