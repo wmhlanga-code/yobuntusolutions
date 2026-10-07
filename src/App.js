@@ -12,14 +12,9 @@ import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import ComingSoon from './pages/ComingSoon';
 
-// The live site shows a "coming soon" screen while the full build stays
-// running locally. `npm start` (development) always shows the real site.
-// A production build (what Vercel deploys) shows Coming Soon by default.
-// Override explicitly with REACT_APP_COMING_SOON=true|false — set it to
-// "false" in Vercel's env vars and redeploy when the site is ready to launch.
-const SHOW_COMING_SOON = process.env.REACT_APP_COMING_SOON
-  ? process.env.REACT_APP_COMING_SOON === 'true'
-  : process.env.NODE_ENV === 'production';
+// The full site is live. To bring back the "coming soon" screen, set
+// REACT_APP_COMING_SOON=true in Vercel's env vars and redeploy.
+const SHOW_COMING_SOON = process.env.REACT_APP_COMING_SOON === 'true';
 
 const STRUCTURED_DATA = {
   '@context': 'https://schema.org',
