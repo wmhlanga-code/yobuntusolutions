@@ -74,6 +74,25 @@ export default function About() {
         </div>
       </section>
 
+      {/* Why we started */}
+      <section style={{ borderBottom: '1px solid var(--border)' }}>
+        <div className="section-wrap" style={{ maxWidth: 820 }}>
+          <p className="eyebrow" style={{ marginBottom: '0.4rem' }}>Why we started</p>
+          <h2 style={{ fontSize: '1.9rem', marginBottom: '1.5rem' }}>
+            Running a business is challenging enough
+          </h2>
+          <div style={{ lineHeight: 1.8, color: 'var(--text-muted)', fontSize: '0.98rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <p>But what happens when you don't have the right systems or strategy to grow?</p>
+            <p>From managing finances and operations to attracting customers and embracing new technology, business owners face challenges that can hold them back.</p>
+            <p>That's why we're launching YoBuntu Solution, a business growth and innovation company helping businesses find practical solutions to real challenges.</p>
+            <p>
+              We're excited to start this journey. What's the biggest challenge your business is facing right now?{' '}
+              <Link to="/contact" style={{ color: 'var(--primary)', fontWeight: 500 }}>Tell us</Link> — we'd love to hear it.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* The problem we solve */}
       <section>
         <div className="section-wrap">
