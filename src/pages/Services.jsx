@@ -50,7 +50,7 @@ export default function Services() {
               </p>
             </div>
             <div className="split-media">
-              <img className="media" src={images.handshake} alt="Business partners agreeing on a deal" style={{ height: 320 }} />
+              <img className="media" src={images.sandton} alt="Aerial view of Sandton, Johannesburg" style={{ height: 320 }} />
             </div>
           </div>
         </div>

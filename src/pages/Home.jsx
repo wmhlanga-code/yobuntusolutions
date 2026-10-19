@@ -216,7 +216,7 @@ export default function Home() {
               </p>
             </div>
             <div className="split-media">
-              <img className="media" src={images.collaboration} alt="Hands collaborating on a laptop" style={{ height: 380 }} />
+              <img className="media" src={images.smallBusiness} alt="A small shopfront on a sunny street in Parys, South Africa" style={{ height: 380 }} />
             </div>
           </div>
         </div>
@@ -302,7 +302,7 @@ export default function Home() {
         <div className="section-wrap">
           <div className="split">
             <div className="split-media">
-              <img className="media" src={images.growth} alt="A growing city skyline representing scaling businesses" style={{ height: 360 }} />
+              <img className="media" src={images.skyline} alt="Johannesburg skyline at golden hour" style={{ height: 360 }} />
             </div>
             <div>
               <p className="eyebrow">The vision</p>

@@ -74,7 +74,7 @@ export default function Network() {
               </p>
             </div>
             <div className="split-media">
-              <img className="media" src={images.meeting} alt="Glass-walled office meeting rooms" style={{ height: 320 }} />
+              <img className="media" src={images.skyline} alt="Johannesburg skyline at golden hour" style={{ height: 320 }} />
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function Network() {
         <div className="section-wrap">
           <div className="split">
             <div className="split-media">
-              <img className="media" src={images.handshake} alt="Two business partners shaking hands on a deal" style={{ height: 340 }} />
+              <img className="media" src={images.market} alt="Fresh produce stalls at a South African market" style={{ height: 340 }} />
             </div>
             <div>
               <p className="eyebrow">The network effect</p>

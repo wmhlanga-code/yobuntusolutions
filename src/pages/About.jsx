@@ -68,7 +68,7 @@ export default function About() {
               </p>
             </div>
             <div className="split-media">
-              <img className="media" src={images.professional} alt="Hands at work on a laptop" style={{ height: 340 }} />
+              <img className="media" src={images.laptop} alt="Hands at work on a laptop" style={{ height: 340 }} />
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function About() {
         <div className="section-wrap">
           <div className="split">
             <div className="split-media">
-              <img className="media" src={images.growth} alt="City skyline representing a growing ecosystem of businesses" style={{ height: 340 }} />
+              <img className="media" src={images.sandton} alt="Aerial view of Sandton, Johannesburg" style={{ height: 340 }} />
             </div>
             <div>
               <p className="eyebrow">The long-term vision</p>
