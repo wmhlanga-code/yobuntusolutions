@@ -39,10 +39,10 @@ const partnerCategories = [
 ];
 
 const connections = [
-  { emoji: '🍽️', left: 'Restaurant', right: 'Corporate client signing a monthly catering contract' },
-  { emoji: '🏭', left: 'Manufacturing SME', right: 'Logistics partner cutting delivery costs by 30%' },
-  { emoji: '🌱', left: 'Agri-business', right: 'Retail buyer securing a year-round supply agreement' },
-  { emoji: '🏥', left: 'Health NGO', right: 'Government procurement partner for medical supply contracts' },
+  { left: 'Restaurant', right: 'Corporate client signing a monthly catering contract' },
+  { left: 'Manufacturing SME', right: 'Logistics partner cutting delivery costs by 30%' },
+  { left: 'Agri-business', right: 'Retail buyer securing a year-round supply agreement' },
+  { left: 'Health NGO', right: 'Government procurement partner for medical supply contracts' },
 ];
 
 const joinSteps = [
@@ -158,7 +158,7 @@ export default function Network() {
                   padding: '0.35rem 0.9rem', borderRadius: 20, fontSize: '0.88rem', fontWeight: 500,
                   whiteSpace: 'nowrap',
                 }}>
-                  {c.emoji} {c.left}
+                  {c.left}
                 </span>
                 <ArrowRight size={18} color="var(--text-muted)" aria-hidden="true" style={{ flexShrink: 0 }} />
                 <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{c.right}</span>
